@@ -20,6 +20,7 @@ new_salaries <- inflation_sucks + random_salaries
 # Remember to set `stringsAsFactors=FALSE`!
 stringsAsFactors = FALSE
 salaries <- data.frame(employees, random_salaries, new_salaries)
+# Why does employees look like a weird word
 
 # Create a column 'change' that stores each person's change in salary between
 # 2017 and 2018
