@@ -18,8 +18,7 @@ new_salaries <- inflation_sucks + random_salaries
 
 # Create a data frame 'salaries' by combining the 3 vectors you just made
 # Remember to set `stringsAsFactors=FALSE`!
-stringsAsFactors = FALSE
-salaries <- data.frame(employees, random_salaries, new_salaries)
+salaries <- data.frame(employees, random_salaries, new_salaries, stringsAsFactors=FALSE)
 # Why does employees look like a weird word
 
 # Create a column 'change' that stores each person's change in salary between
