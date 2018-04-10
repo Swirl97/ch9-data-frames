@@ -30,10 +30,10 @@ largest_grant <- max(gates_money$total_amount)
 smallest_grant <- min(gates_money$total_amount)
 
 # Which organization received the largest grant?
-largest_receiver <- organization(gates_money$total_amount == largest_grant)
+largest_receiver <- organization[gates_money$total_amount == largest_grant]
 
 # Which organization received the smallest grant?
-
+smallest_receiver <- organization[gates_money$total_amount == smallest_grant]
 
 # How many grants were awarded in 2010?
-
+length(gates_money$total_amount[gates_money$start_year == 2010])
